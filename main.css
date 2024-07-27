@@ -1,0 +1,890 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    margin: 40px 100px;
+}
+
+/* start header */
+header {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 10px 20px;
+    background: #0b9586;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px;
+}
+
+header .navbar .logo img {
+    width: 150px;
+    margin-left: 30px;
+}
+
+header .navbar nav ul {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+header .navbar nav ul li a {
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+
+header .navbar nav ul li:first-child a {
+    border-bottom: 2px solid #575757;
+    background: transparent;
+    background: #0a8678;
+}
+
+header .navbar .call li:first-child {
+
+    color: #fff;
+    margin-left: 70px;
+    font-size: 18px;
+
+}
+
+header .navbar .call li:last-child {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* end header */
+
+/* start Home */
+#home {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    background: url('./images/solar-panels-meadow 1.png') center/cover no-repeat;
+}
+
+#home .after {
+    display: flex;
+    align-items: center;
+
+}
+
+#home .after span {
+    padding: 7px;
+    color: #fff;
+}
+
+#home .after div {
+    width: 170px;
+    height: 3px;
+    background: #575757;
+    position: relative;
+
+}
+
+#home .after div::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #fff;
+
+}
+
+#home h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 60px;
+
+}
+
+#home p {
+    padding: 15px 0px;
+    width: 70%;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+#home button {
+    background: #0b9586;
+    border: 1px solid #0b9586;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 10px;
+
+}
+
+#home .btn {
+    background-color: #ffbb1c;
+    border: 1px solid #ffbb1c;
+    margin-left: 15px;
+    color: #000;
+}
+
+/* end home */
+/* start about */
+#about {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#about .about-content h3 {
+    padding-bottom: 15px;
+    font-size: 35px;
+    font-weight: 800;
+    color: #000;
+}
+
+#about .about-content p {
+    font-size: 17px;
+    color: #a3a9b3;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+#about .about-content .loading h4 {
+    padding: 5px;
+    font-size: 19px;
+    font-weight: 600;
+
+}
+
+#about .about-content .loading h4 span {
+    color: #09c538;
+    margin-right: 5px;
+}
+
+#about .about-img img {
+    width: 400px;
+}
+
+.about-content .box {
+    background: #ffbb1c;
+    width: 220px;
+    height: 160px;
+    border-radius: 5px;
+    z-index: 9;
+    position: relative;
+    bottom: 100px;
+    left: 610px;
+
+}
+
+.about-content .box i {
+    padding: 10px 6px;
+    font-size: 30px;
+    color: #000;
+
+}
+
+.about-content .box p {
+    font-size: 18px;
+    color: #000 !important;
+    font-size: 40px;
+    padding: 10px;
+
+}
+
+/* end about */
+/* start power */
+.power {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    background: url('./images/power-pans.png') center/cover no-repeat;
+
+}
+
+.power h2 {
+    font-size: 35px;
+
+    padding: 7px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.power p {
+    font-size: 19px;
+    font-family: sans-serif;
+    color: #fff;
+    margin: 13px;
+    width: 60%;
+
+}
+
+.power button {
+    padding: 13px 20px;
+    font-size: 19px;
+    border-radius: 10px;
+    background: #ffbb1c;
+    border: 1px solid #ffbb1c;
+    color: #000;
+}
+
+/* end power */
+/* start solar kits */
+.solar-kits {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+.solar-kits h2 {
+    padding: 5px;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+.solar-kits p {
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    color: #aeb4bc;
+
+}
+
+.solar-kits .items-solar {
+    display: inline-block;
+    width: 300px;
+    height: 370px;
+    margin: 30px 15px 0px 15px;
+    -webkit-box-shadow: 0 0 20px #ddd;
+    -moz-box-shadow: 0 0 10 #ddd;
+    box-shadow: 0 0 10px #ddd;
+
+}
+
+.solar-kits .items-solar img {
+    width: 300px;
+}
+
+.solar-kits .items-solar h2 {
+    font-size: 19px;
+    text-align: start;
+    padding: 5px;
+    font-weight: normal;
+}
+
+.solar-kits .items-solar p {
+    font-size: 17px;
+    padding: 3px;
+    color: #aeb4bc;
+}
+
+.solar-kits .items-solar h5,
+.box-right h5 {
+    padding: 5px;
+    font-size: 19px;
+    color: #0b9586;
+
+}
+
+.solar-kits .items-solar i,
+.box-right i {
+    color: #0b9586;
+    padding: 3px;
+    font-size: 16px;
+}
+
+/* end soLar */
+/* start desciption */
+.dec {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    background: url('./images/dec.png') center/cover no-repeat;
+
+}
+
+.dec .overlay {
+    width: 600px;
+    height: 200px;
+    border-radius: 7px;
+    margin: 100px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.dec .overlay h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 26px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.dec .overlay p {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* end dec */
+
+/* start energy */
+.big-energy {
+    background-color: #fffcf4;
+    padding: 20px 0px;
+}
+
+.energy {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.energy .box-left {
+    width: 250px;
+    margin-right: 50px;
+}
+
+.energy .box-left i {
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: 5px solid #e2f0e5;
+    background: #0b9586;
+    color: #fff;
+}
+
+.energy .box-left h2 {
+    padding: 7px 0px;
+    font-weight: 800;
+}
+
+.energy .box-right {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid #0b9586;
+    background-color: #e2f0e5;
+    margin: 30px 30px 0px 0px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.energy .box-right img {
+    width: 200px;
+    height: 70px;
+
+}
+
+.energy .box-right h2 {
+    font-weight: 500;
+    padding: 5px 0px;
+}
+
+.energy .box-right p,
+.energy .box-left p {
+    color: #6a6c6d;
+
+}
+
+.box-right h5 {
+    text-align: start;
+}
+.box-right p span{
+    text-decoration: underline;
+    color: #5c6672;
+}
+
+/* start servecies */
+
+.servecies {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.servecies h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    padding: 6px;
+    text-align: center;
+}
+
+.servecies p {
+    color: #6a6c6d;
+    text-align: center;
+    padding: 12px;
+}
+
+.servecies .price-box {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    margin-left: 40px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #0b9586;
+    background-color: #e2f0e5;
+
+}
+
+.servecies .price-box i {
+    font-size: 35px;
+    padding: 5px 10px;
+    color: #0b9586;
+}
+
+.servecies .price-box h2 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: start;
+    padding: 10px;
+}
+
+/* end services */
+/* start swiper */
+
+.swiper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.swiper .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.swiper .items span {
+    color: #0b9586;
+}
+
+.swiper .items .point {
+    display: flex;
+
+}
+
+.swiper .items .point div {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin: 2px;
+    background: #aeb4bc;
+
+}
+
+.swiper .items .point div:first-child {
+    background: #6a6c6d;
+}
+
+.swiper .title {
+    width: 300px;
+    margin-right: 300px;
+}
+
+.swiper .title i {
+    font-size: 30px;
+    color: #0b9586;
+}
+
+.swiper .title h3 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 5px 0px;
+    color: #000;
+}
+
+
+.swiper .content {
+    /* display: flex; */
+    width: 400px;
+    height: auto;
+    padding: 12px;
+    border-radius: 7px;
+    border: 1px solid #0b9586;
+    background-color: #e2f0e5;
+}
+
+.swiper .content h4 {
+    padding: 10px;
+
+}
+
+.swiper .profile {
+    display: flex;
+    align-items: center;
+    margin: 15px 5px 0px 0px;
+}
+.swiper .content .pro{
+   margin-left: 300px;
+   align-items: center;
+}
+.swiper .content i {
+ 
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #707a83;
+}
+
+.swiper .profile img {
+    padding: 5px;
+}
+
+/* end swiper */
+/* start footer */
+.footer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #283646;
+    color: #fff;
+}
+
+.footer .box1 {
+    display: flex;
+    /* justify-content: space-around;  */
+    align-items: center;
+    position: relative;
+
+}
+
+.footer .box-left ul {
+    display: flex;
+
+}
+
+.footer .box-left li a {
+    padding: 20px 50px 20px 0px;
+    text-align: start;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+.footer .box-right {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+
+.footer .box-right p {
+    padding: 7px;
+}
+
+.box-search {
+    display: flex;
+
+}
+
+.box-search input {
+    padding: 10px;
+    border-radius: 15px;
+    background: #5c6672;
+    border: 1px solid #707a83;
+    outline: none;
+
+}
+
+.box-search input::placeholder {
+    color: #707a83;
+    font-size: 14px;
+
+}
+
+.box-search button {
+    padding: 8px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #ffbb1c;
+    border: 1px solid #ffbb1c;
+    margin: 0px;
+}
+
+.footer .line {
+    width: 100%;
+    height: 2px;
+    background-color: #707a83;
+    margin: 20px 0px;
+}
+
+.footer .terms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .terms ul:last-child {
+    color: #707a83;
+}
+
+.footer .terms ul {
+    display: flex;
+}
+
+.footer .terms ul li {
+    padding: 10px;
+    margin-top: 20px;
+    color: #707a83;
+}
+
+  /* start Home */
+  @media (max-width: 767px) {
+    header {
+        padding: 10px;
+      }
+    
+      header .navbar {
+        margin: 0;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      header .navbar .logo img {
+        width: 120px;
+        align-items: center;
+      }
+    
+      header .navbar nav ul {
+        /* flex-direction: column; */
+        display: flex;
+        align-items: flex-start;
+        margin-right: 7px;
+        margin-top: 10px;
+      }
+    
+      header .navbar nav ul li a {
+        font-size: 16px;
+        padding: 5px 10px;
+        margin-left: 18px;
+      }
+    
+      header .navbar .call {
+       display: none;
+      }
+    
+    .container {
+        margin: 30px 50px;
+    }
+    #home,
+    .power {
+      height: auto;
+      padding: 40px 20px;
+    }
+  
+    #home .after span {
+      padding: 5px;
+    }
+  
+    #home .after div {
+      width: 80%;
+    }
+  
+    #home h2 {
+      font-size: 24px;
+      margin-top: 30px;
+    }
+  
+    #home p {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px 0;
+    }
+    #home .button{
+        display: flex;
+    }
+    #home button,
+    #home .btn {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    #home .btn {
+      margin-left: 10px;
+    }
+  
+    #home .image-container {
+      order: -1;
+      margin-bottom: 20px;
+    }
+  
+    #home .image-container img {
+      width: 100%;
+      height: auto;
+    }
+    /* about */
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .about-content h3 {
+        font-size: 28px;
+    }
+
+    #about .about-content p {
+        width: 100%;
+       
+    }
+
+    #about .about-img img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .about-content .box {
+        width: 180px;
+        height: 130px;
+        bottom: 50px;
+        left: 0;
+        display: none;
+    }
+
+    .about-content .box i {
+        font-size: 24px;
+    }
+
+    .about-content .box p {
+        font-size: 32px;
+    }
+    /* power */
+    .power h2{
+        font-size: 25px;
+    }
+    .power p{
+        width: 90%;
+    }
+    .energy {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .energy .box-left,
+    .energy .box-right {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .dec .overlay{
+       max-width: 350px;
+       padding: 5px;
+       height: auto;
+    }
+    .dec .overlay h3{
+        font-size:22px ;
+    }
+    .servecies .price-box{
+        margin:10px 0px 15px 0px;
+        padding: 10px;
+        
+    }
+    .swiper {
+        flex-direction: column;
+        justify-content: center;
+      }
+    
+      .swiper .items {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .swiper .title {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+      }
+      .swiper .title p{
+        padding: 10px;
+      }
+    
+      .swiper .content {
+        width: 100%;
+      }
+    
+      .swiper .content .pro {
+        margin-left: 0;
+        text-align: center;
+      }
+    
+      .footer .box1 {
+        flex-direction: column;
+      }
+    
+      .footer .box-left ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .footer .box-left li a {
+        padding: 10px 0;
+      }
+    
+      .footer .box-right {
+        position: static;
+        text-align: center;
+      }
+    
+      .box-search {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .box-search input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    
+      .box-search button {
+        width: 100%;
+      }
+    
+      .footer .terms {
+        flex-direction: column;
+      }
+    
+      .footer .terms ul {
+        flex-direction: column;
+        align-items: center;
+      }
+  }
+
+/* end responsive */
